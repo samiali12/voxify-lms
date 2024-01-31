@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    p {
+      color: #555;
+      margin-top: 20px;
+    }
+
+    p.signature {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Order Confirmation</h2>
+  <p>Thank you for your order! Here are the details:</p>
+
+  <table>
+    <tr>
+      <th>Order ID:</th>
+      <td><%= data._id %></td>
+    </tr>
+    <tr>
+      <th>Course Name:</th>
+      <td><%= data.name %></td>
+    </tr>
+    <tr>
+      <th>Price:</th>
+      <td><%= data.price %></td>
+    </tr>
+    <tr>
+      <th>Date:</th>
+      <td><%= data.date %></td>
+    </tr>
+  </table>
+
+  <p>Thank you for choosing our service. If you have any questions, feel free to contact us.</p>
+
+  <p class="signature">Best regards,<br>Your Company Name</p>
+</body>
+
+</html>

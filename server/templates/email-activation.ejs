@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .code {
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome <%= user.name %>,</h2>
+        <p>Thank you for registering. Please use the following activation code to complete your registration:</p>
+        <p class="code">
+            <%= activationCode %>
+        </p>
+        <p>Best Regards,</p>
+        <p>Your Team</p>
+    </div>
+</body>
+
+</html>
